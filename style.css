@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+padding: 1.5rem;
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #377dff;
+}
+.navbar ul{
+    font-size: 1.1rem;
+    /* padding-left: 40px; */
+}
+@media only screen and (max-width: 501px) {
+    .navbar .logo{
+        font-size: 18px;
+        
+        
+    }
+    .navbar{
+        padding: 0.5rem;
+        }
+  }
+
+
+
+ .content .heading-1{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 42px;
+    font-weight: 600;
+  }
+ .content .heading-1 span{
+   
+    font-size: 42px;
+    font-weight: 600;
+    color: #377dff;
+  
+  }
+
+  .content .text-1{
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    opacity: 0.7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+  }
+.rowLeft div:active{
+opacity: 0.4;
+
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 615px) {
+
+    .content    .heading-1{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .content .heading-1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #377dff;
+     
+      }
+  }
+
+
+  .btn-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   padding-top: 4rem;
+  }
+  .btn-content button{
+    padding: 0.8rem 2.2rem;
+    margin: 12px;
+   width: 150px;
+  }
+
+  @media only screen and (max-width: 312px){
+    .btn-content{
+        display: block;
+      margin: 0%;
+    }
+    .editorTable .rowLeft{
+      
+     padding: 0rem;
+    }
+  }
+
+
+  .editorTable{
+    border-top: 1px solid #377dff;
+    padding: 2rem;
+  }
+  .editorTable .rowLeft{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+  }
+
+  .writerBox{
+    border: 1px solid #377dff;
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 590px){
+    #box{
+      display: flex;
+    }
+    .editorTable .rowLeft{
+      flex-direction: column;
+      
+    }
+    .writerBox input{
+width: 100%;
+margin: 0.4rem;
+
+    }
+  }
+  .writerBox input{
+   
+font-size: 18px;
+padding: 0.5rem;
+
+
+  }
+  .writerBox input:-moz-focusring{
+    border: inherit;
+  }
+#textColor #bgColor {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); 
+   gap: 6px;
+text-transform:none;
+}
+ .color1{
+  background-color: red;
+  color: red;
+}
+ .color2{
+  background-color: gold;
+}
+ .color3{
+  background-color:skyblue;
+}
+ .color4{
+  background-color:blue;
+}
+ .color5{
+  background-color:aqua;
+}
+ .color6{
+  background-color:brown;
+}
+ .color7{
+  background-color:darkgreen;
+}
+ .color8{
+  background-color:chartreuse;
+}
+ .color9{
+  background-color:crimson;
+}
+ .color10{
+  background-color:violet;
+}
+ .color11{
+  background-color:blueviolet;
+}
+ .color12{
+  background-color:sienna;
+}
+.color13{
+  background-color:darkslategrey
+}

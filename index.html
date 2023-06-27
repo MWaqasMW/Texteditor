@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container">
+      <a class="navbar-brand navbar logo" href="#"><img src="./images/address-book.png" alt="" width="35px">
+        RichTextEditor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Demos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Document</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+
+        <button class="btn btn-primary" type="submit">Download</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="heading-1">The Most Powerful WYSIWYG Editor</div>
+    <div class="text-1">The #1 WYSIWYG Editor updated with new features, redesigned UI.</div>
+  </div>
+  <div class="btn-content">
+
+    <button type="button" class="btn btn-primary col-lg-2 ">Download</button>
+    <button type="button" class="btn btn-secondary col-lg-2 ">Demoes</button>
+
+  </div>
+  <div id="box">
+    <div class="editorTable">
+      <div class="rowLeft">
+        <div class="bold" onclick="boldClick()"><img src="./images/bold-text.png" alt="" width="15px"></div>
+        <div class="italic" onclick="italicClick()"><img src="./images/italic.png" alt="" width="15px"></div>
+        <div class="underline" onclick="underLine()" onclick="blur()"><img src="./images/underline.png" alt=""
+            width="15px"></div>
+        <div class="textColor" onclick="dropDown()"><img src="./images/text.png" alt="" width="15px">
+          <select id="textColor" class="color">
+            <option class="color1" value="red"></option>
+            <option class="color2" value="gold"></option>
+            <option class="color3" value="skyblue"></option>
+            <option class="color4" value="blue"></option>
+            <option class="color5" value="aqua"></option>
+            <option class="color6" value="brown"></option>
+            <option class="color7" value="darkgreen"></option>
+            <option class="color8" value="chartreuse"></option>
+            <option class="color9" value="crimson"></option>
+            <option class="color10" value="violet"></option>
+            <option class="color11" value="blueviolet"></option>
+            <option class="color12" value="sienna"></option>
+            <option class="color13" value="darkslategrey"></option>
+          </select>
+
+
+        </div>
+        <div class="theme" onclick="backGround() "><img src="./images/theme.png" alt="" width="15px">
+          <select id="bgColor" class="color">
+            <option class="color1" value="red"></option>
+            <option class="color2" value="gold"></option>
+            <option class="color3" value="skyblue"></option>
+            <option class="color4" value="blue"></option>
+            <option class="color5" value="aqua"></option>
+            <option class="color6" value="brown"></option>
+            <option class="color7" value="darkgreen"></option>
+            <option class="color8" value="chartreuse"></option>
+            <option class="color9" value="crimson"></option>
+            <option class="color10" value="violet"></option>
+            <option class="color11" value="blueviolet"></option>
+            <option class="color12" value="sienna"></option>
+            <option class="color13" value="darkslategrey"></option>
+          </select>
+        </div>
+        <div class="alignLeft" onclick="alingLeft()"><img src="./images/align.png" alt="" width="15px"></div>
+        <div class="alignCenter" onclick="alingcenter()"><img src="./images/center-alignment.png" alt="" width="15px">
+        </div>
+        <div class="alignRight" onclick="alingright()"><img src="./images/align (1).png" alt="" width="15px"></div>
+        <div class="textSize" onclick="fontSize()"><img src="./images/decrease-font-size.png" alt="" width="15px">
+          <select id="font" value ="18px">
+            <option value="10px">10px</option>
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+            <option value="22px">22px</option>
+            <option value="24px">24px</option>
+            <option value="26px">26px</option>
+            <option value="28px">28px</option>
+            <option value="32px">32px</option>
+            <option value="34px">34px</option>
+            <option value="36px">36px</option>
+            <option value="38px">38px</option>
+          </select>
+
+
+
+        </div>
+        <div class="fontStyle" onclick="fontStyle()"><img src="./images/font.png" alt="" width="15px">
+          <select id="fontstyle" value =" ">
+            <option value="'Courier New', Courier, monospace">Courier</option>
+            <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Franklin</option>
+            <option value="'Times New Roman', Times, serif">Times</option>
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="Georgia, 'Times New Roman', Times, serif">Georgia</option>
+            <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe</option>
+            <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Lucida</option>
+            <option value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Trebuchet</option>
+          </select>
+        
+        
+        
+        
+        </div>
+        <div class="caseLetter" onclick=""><img src="./images/uppercase-interface-button.png" alt="" width="17px">
+        <select name="" id="letterCase" onclick="letCase()">
+          <option value="capitalize">Capitalize</option>
+          <option value="uppercase">UPPERCASE</option>
+          <option value="lowercase">lowercase</option>
+          <option value="none">none</option>
+        </select>
+        
+        </div>
+      </div>
+    </div>
+    <div class="writerBox">
+      <input type="textera" id="inputText" placeholder="SomeThing Write Now">
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
